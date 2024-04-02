@@ -59,9 +59,9 @@ These instructions are for doing a complete build on a headless (without a keybo
 
 * **Temporarily patch the dtoverlay bug until it hits mainstream**
 
-**wget https://github.com/raspberrypi/utils/archive/refs/heads/master.zip
+**`wget https://github.com/raspberrypi/utils/archive/refs/heads/master.zip
 unzip master.zip;cd utils-master;cmake .;make;make install;
-cd ..;rm -rf utils-master;rm master.zip;**
+cd ..;rm -rf utils-master;rm master.zip;`**
 
 ### Getting ORP Scripts ######
 
