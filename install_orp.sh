@@ -183,6 +183,11 @@ source "${BASH_SOURCE%/*}/functions/functions_web.sh"
 ########################################################
 source "${BASH_SOURCE%/*}/functions/functions_cleanup.sh"
 ########################################################
+########################################################
+# OS Patches
+########################################################
+source "${BASH_SOURCE%/*}/functions/functions_os_patches.sh"
+
 ### INITIAL FUNCTIONS ####
 check_root
 check_os
@@ -191,6 +196,8 @@ check_internet
 
 # Start Time
 START_TIME=$(date +%s)
+
+fixup_dtoverlay_linking
 ################################################################################
 # USER INPUT
 ################################################################################
