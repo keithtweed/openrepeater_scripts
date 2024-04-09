@@ -9,7 +9,8 @@ function fixup_dtoverlay_linking (){
     echo " Fixing DTOVERLAY Linking                 "
     echo "--------------------------------------------------------------"
     #####################################################################
-    wget https://github.com/raspberrypi/utils/archive/refs/heads/master.zip
+	apt install cmake device-tree-compiler libfdt-dev --assume-yes --fix-missing  
+   wget https://github.com/raspberrypi/utils/archive/refs/heads/master.zip
     unzip master.zip;
     cd utils-master;
     cmake .;

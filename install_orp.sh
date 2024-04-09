@@ -197,7 +197,7 @@ check_internet
 # Start Time
 START_TIME=$(date +%s)
 
-fixup_dtoverlay_linking
+
 ################################################################################
 # USER INPUT
 ################################################################################
@@ -222,6 +222,7 @@ fi
 # MAIN SCRIPT - Run Functions and Save to Log
 ################################################################################
 (
+	fixup_dtoverlay_linking
 	########################################################
 	# grab date for build date/start build time
 	########################################################
@@ -239,7 +240,7 @@ fi
 	########################################################	
 	set_wifi_domain
 	####################################################
-	# add serial consile to allow access where no 
+	# add serial console to allow access where no 
 	# network avaible. Rpi zero/w/w2 (New)
 	####################################################
 	#otg_console
